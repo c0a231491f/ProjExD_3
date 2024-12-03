@@ -145,7 +145,7 @@ class Score:
     """
     スコアに関するクラス
     """
-    def __init__(self, fonto, color, img):
+    def __init__(self):
         """
         スコアを表示する
         引数1 fonto：スコアを表すフォント
@@ -175,7 +175,7 @@ def main():
     bird = Bird((300, 200))
     bomb = Bomb((255, 0, 0), 10)
     beam = None # ビームインスタンス生成
-    score = Score(None, None, None)  # Scoreインスタンス生成
+    score = Score()  # Scoreインスタンス生成
     # bomb2 = Bomb((0, 0, 255), 20) 青い爆弾（仮）
     bombs = [Bomb((255, 0, 0), 10) for _ in range(NUM_OF_BOMBS)]
     clock = pg.time.Clock()
